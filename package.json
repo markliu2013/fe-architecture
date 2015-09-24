@@ -1,0 +1,23 @@
+{
+  "name": "fe-architecture",
+  "title": "Front End Architecture",
+  "description": "Front End Architecture Demo",
+  "version": "1.0.0",
+  "homepage": "",
+  "author": {
+    "name": "Mark Liu",
+    "email": "markliu2013@gmail.com",
+    "url": "http://blog.whlcsj.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/markliu2013/fe-architecture.git"
+  },
+  "bugs": {
+    "url": "https://github.com/markliu2013/fe-architecture/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}

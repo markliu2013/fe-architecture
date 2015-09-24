@@ -1,0 +1,7 @@
+{
+  "directory": "bower_components",
+  "analytics": false,
+  "timeout": 60000,
+  "color": true,
+  "shorthand-resolver": "git://github.com/{{owner}}/{{package}}.git"
+}
