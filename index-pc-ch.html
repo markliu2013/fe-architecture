@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta content="telephone=no" name="format-detection">
+<meta name="HandheldFriendly" content="true">
+<meta charset="utf-8"/>
+<title>DSkies</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/> 
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+<!-- <link rel="stylesheet" type="text/css" href="http://csstest.cy.com/dist/dskiss/css/main.css" /> -->
+</head>
+<body class="ch">
+<div class="sec secAbout">
+    <p class="title1">请致电<br><b href="tel:400-150-1101">400-150-1101</b><br>预约参观或订位</p>
+    <p class="title2">
+        一个<b>全新的<br>专属的<br>创意俱乐部</b>
+    </p>
+    <p class="title3">如果你正想找一个有创造性的氛围来进行你的工作。<br><br>
+    上海以其不断变化的创意场景而闻名。上海新天地，附近的画廊、初创企业和青年创意家们，随处可见。享受我们共同的工作环境，让您的自主事业腾飞。<br>
+    DSkies目的是作为创意文化枢纽，教育的、艺术的、和企业家的价值观，在这里得到了培养和交换。
+    </p>
+    <p class="title4"><a href="http://dskies.cn/1/index-en.html">EN</a><a href="http://dskies.cn/1/index.html">中文</a></p>
+</div>
+<div class="nav">
+    <div class="wrap">
+        <a href="#" class="logo" title="DSkies"></a>
+        <a class="more">more</a>
+        <div class="nav-wrap">
+            <a href="#">关于</a>
+            <a href="#office">空间</a>
+            <div class="menu">
+                <span>地点</span>
+                <p>
+                    <a href="#locations">新天地</a>
+                    <span><b>即将开始</b>新天地<br>陆家嘴<br>人民广场<br>徐家汇</span></p></div>
+            <a href="#auction">竞拍</a>
+        </div>
+        <a class="user"></a>
+        <div class="nav-user">
+            <a href="#signin">登录</a>
+            <a href="#signup">注册</a>
+            <div class="form form-signup-complete" style="display:none;">
+                <div class="hd">
+                    <b>Hi!</b>
+                    <span>Welcome,<br>just few clicks<br>and join us!</span>
+                    <a href="#signin">Already a member? <b>Sign in !</b></a>
+                </div>
+                <div class="bd">
+                    <input type="text" placeholder="Given name"/>
+                    <input type="text" placeholder="Family name"/>
+                    <select>
+                        <option value="">Specialization</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Fashion designer">Fashion designer</option>
+                        <option value="Graphic designer">Graphic designer</option>
+                        <option value="Illustrator">Illustrator</option>
+                        <option value="Industrial designer">Industrial designer</option>
+                        <option value="Maker">Maker</option>
+                        <option value="Photographer">Photographer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="file">Portfolio PDF format (max 5 mb)<input type="file"/></div>
+                    <p><a href="#form-close"><b>Skip</b></a>this step and update later in your profile page</p>
+                </div>
+                <div class="ft">
+                    <a href="#form-close">Complete</a>
+                </div>
+            </div>
+            <div class="form form-signup" style="display:none;">
+                <div class="hd">
+                    <b>Hi!</b>
+                    <span>Welcome,<br>just few clicks<br>and join us!</span>
+                    <a href="#signin">Already a member? <b>Sign in !</b></a>
+                </div>
+                <div class="bd">
+                    <div class="msg">it is error</div>
+                    <input type="phone" placeholder="Phone number"/>
+                    <input type="email" placeholder="e-mail"/>
+                    <input type="password" placeholder="Password"/>
+                    <div class="code"><input type="text"/><span>VERIFY MESSAGE</span></div>
+                    <label><input type="checkbox"/> I agree the terms</label>
+                </div>
+                <div class="ft">
+                    <a href="#signup-complete">Join</a>
+                </div>
+            </div>
+            <div class="form form-signin" style="display:none;">
+                <div class="hd">
+                    <b>Hey there!</b>
+                    <span>Look what<br>is available<br>this week!</span>
+                    <a href="#signup">Not a member? <b>Sign up here!</b></a>
+                </div>
+                <div class="bd">
+                    <input type="text" placeholder="e-mail/phone number"/>
+                    <input type="password" placeholder="Password"/>
+                    <span>Forgot your password?</span>
+                </div>
+                <div class="ft">
+                    <a href="#form-close">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sec secAuction" id="auction">
+    <p class="title1">即将开始你的<b>全新体验</b></p>
+    <div id="fancyCountdown" class="cutdown"></div>
+    <p class="title2">参加竞拍<br><b>加入成为会员！</b></p>
+</div>
+<div class="sec secJoin" id="join">
+    <a class="join" href="#signin">加入</a>
+    <p class="title1">在这里您将拥有<br>专属的工作位，<b>可以免费！</b></p>
+    <p class="title2">没有赢得竞拍？不要紧，您仍有免费活动工作位的机会！看下面如何获得！</p>
+</div>
+<div class="sec secOffice">
+    <div class="wrap">
+        <p class="mod-p"><i class="icon icon-invitation"></i><span>DSkies <b>邀请</b></span>DSkies takes care about the qualities and skills of designers to whom offers great services.<br>
+In order to stimulate the good design in Shanghai and China, DSkies give a free desk to <b id="office">one</b> designer that consider worthy and talended. To be invited, please be sure to send us your personal portfolio!</p>
+        <p class="mod-p"><i class="icon icon-luck"></i><span><b>幸运</b> 抽奖</span>DSkies also gives a chance to lucky guys through a lottery. Just <b>one</b> designer will be randomly chosen by our reliable and tried system.<br>
+Just bid and find out how much lucky you are!</p>
+        <p class="mod-p"><i class="icon icon-boost"></i><span><b>微信</b> 助力</span>DSkies reserves an exclusive desk to <b>one</b> supports more our campaign of outstanding designers hunting.<br>
+To do this, just spread to your creative friends the DSkies advertising page through Wechat.</p>
+    </div>
+    <div class="slider">
+        <div class="mod-slider" id="offices">
+            <ul class="slider-list">
+                <li><a><img src="img/DSkies01.jpg"/></a><i><em></em><span><img src="img/DSkies01.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies02.jpg"/></a><i><em></em><span><img src="img/DSkies02.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies03.jpg"/></a><i><em></em><span><img src="img/DSkies03.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies04.jpg"/></a><i><em></em><span><img src="img/DSkies04.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies05.jpg"/></a><i><em></em><span><img src="img/DSkies05.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies06.jpg"/></a><i><em></em><span><img src="img/DSkies06.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies07.jpg"/></a><i><em></em><span><img src="img/DSkies07.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies08.jpg"/></a><i><em></em><span><img src="img/DSkies08.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies01.jpg"/></a><i><em></em><span><img src="img/DSkies01.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies02.jpg"/></a><i><em></em><span><img src="img/DSkies02.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies03.jpg"/></a><i><em></em><span><img src="img/DSkies03.jpg"/></span></i></li>
+            </ul>
+            <div class="slider-page">
+                <a href="#" style="display:none;">1</a>
+                <a href="#" style="display:none;">2</a>
+                <a href="#" class="active">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#" style="display:none;">3</a>
+            </div>
+        </div>
+        <i class="slider-bg-left"></i>
+        <i class="slider-bg-right"></i>
+    </div>
+    <div class="wrap">
+        <p class="title1">分享您的价值观，<br><b>助力您的事业。</b></p>
+        <p class="title2">在这个超级棒地方，您可以设置一个工作空间，并与你的团队合作，或偶遇和建立起那些重要的联系。如果您正想提升你的设计师职业生涯，那么加入到DSkies的创意社群中来吧！<br><br>
+        我们为那些自由的创意设计师们提供的是：一个完成工作的地方，约见客户的地方，和专业“展示自己”的地方，思想的传递与亲身的表达，两者兼得。独立工作的同时，成为创意社群中的一份子，您的周边将充满才华洋溢的人，分享价值，协同工作。</p>
+
+    </div>
+</div>
+<div class="sec secArea" id="area">
+    <div class="wrap">
+        <p class="mod-p"><i class="icon icon-1"></i><span><b>Flexible,dynamic</b> and <b>comfortable</b></span>As all coworking spaces our DSkies offer amenities and services that let the creative live and feel a comfortable space like his own home. Food and beverages, wi-fi, administration services, printing, amusement , as well as all restaurants and all services offered by several businesses located in the basement of SOHO Fuxing plaza.</p>
+        <p class="mod-p"><i class="icon icon-2"></i><span>A workspace where <b>exhibit your talent</b></span>We think that one of the first service a designer needs is the chance to share,highlight and exhibit his own talent and work to the others. That’s why our workspaces are conceived in order to show designers products and researches.</p>
+        <p class="mod-p"><i class="icon icon-3"></i><span><b>The best location</b> for best designers</span>With the first office located at the 11th floor of the tower A of SOHO Fuxing plaza in Xintiandi, DSkies wants to let talended designers work in areas opened to international sharing of ideas and initiatives about the world of design, fashion and technology. Our vision forecasts to enstablish a DSky in all the most important and social active areas of Shanghai.</p>
+        <p class="mod-p"><i class="icon icon-4"></i><span>An <b>outstanding enviroment</b> for your creativity</span>With the first office located at the 11th floor of the tower A of SOHO Fuxing plaza in Xintiandi, DSkies wants to let talended designers work in areas opened to international sharing of ideas and initiatives about the world of design, fashion and technology. Our vision forecasts to enstablish a DSky in all the most important and social active areas of Shanghai.</p>
+    </div>
+</div>
+<div class="sec secLocations" id="locations">
+    <div class="wrap">
+        <p class="title1"><b>Keep tuned!</b><br>Discover next new DSkies.</p>
+        <p class="title2">We’re going to enstablish several dskies in Shanghai, the most important economic, financial and multicultural city of China.
+        <br><br>
+        The first special DSky is based in the middle of Xintiandi, a key landmark,the best location for creatives and designers from all over the world. </p>
+    </div>
+</div>
+<div class="sec secFooter" id="footers">
+    <div class="wrap">
+        <div class="hd">
+            <p class="title1">Not a member yet?<br>Get <b>now</b> your<br><b>special membership!</b></p>
+            <p class="title2">
+                <a class="join" href="#signin"></a>
+                <span>or call us<br><b>400-150-1101</b></span>
+            </p>
+        </div>
+        <div class="bd">
+            <p class="title1">
+                <span class="logo"></span>
+                <small>over the top</small>
+                11F SOHO Fuxing Plaza. <br>
+                388 Madang Road. <br>
+                Huangpu. <br>
+                Shanghai. 200025.<br>
+            </p>
+            <div class="right">
+                <dl>
+                    <dt><a href="#auction">Auction</a></dt>
+                </dl>
+                <dl class="menu">
+                    <dt><span>Locations</span></dt>
+                    <dd>
+                    <a href="#locations">Xin Tian Di</a>
+                    <span><b>Coming soon</b>Jing An Temple<br>Lu JIa Zui<br>People Square<br>Xu Jia Hui</span></dd>
+                </dl>
+                <dl>
+                    <dt>Events</dt>
+                </dl>
+                <dl>
+                    <dt><a href="#office">The office</a></dt>
+                    <dd><a>Reservation</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">About us</a></dt>
+                    <dd><a href="#footer">Career<br>Contact us</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="ft">
+            <p class="title1"><a href="http://dskies.cn/1/index-en.html">EN</a><a href="http://dskies.cn/1/index.html">中文</a></p>
+            <p class="title2">
+                <span class="left">Terms of Use | Privacy Policy | Legal Statement | Site map</span>
+
+                <span class="right">2015-2016 DSkies EUCP All rights reserved<i>沪ICP备15049473号-2</i></span>
+            </p>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.fancyCountdown.min.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<script type="text/javascript">
+$(function(){
+    $('#fancyCountdown').fancyCountdown({
+        year:2015,
+        month:11,
+        day:21,
+        hour:12,
+        minute:12,
+        second:12,
+        timezone:1,
+        digitUnitHeight:36,
+        autoStart:true,
+        callback:targetReached,
+        digits:{days:true,hours:true,minutes:true,seconds:true},
+        bottomDigitOffset: 28,
+        overlayImageUrl: '',
+        captionTitles: {
+            days: "天",
+            hours: "时",
+            minutes: "分",
+            seconds: "秒"
+        },
+
+    });
+    indexSwipe("offices");
+    function targetReached() {
+      $('#target-date-reached').slideDown(500);
+      return false;
+    };
+    function indexSwipe(idNmane){
+        new Swipe(document.getElementById(idNmane), {
+            speed:500,
+            auto:3000,
+            startSlide:2,
+            callback: function(){
+                var lis = $(this.element).next("div.slider-page").children();
+                lis.removeClass("active").eq(this.index).addClass("active");
+            }
+        });
+    }
+    function reset(){
+        var w = document.body.scrollWidth;
+        var div = $('.secAbout');
+        var p = div.find('.title1');
+        var r1 = 0.52;
+        var r2 = 0.62;
+        if(w>=800){  
+            if( w < 1200){
+                var rate = (970/800).toFixed(1);
+                var height = w/rate;
+            }else{
+                var rate = (1440/400).toFixed(1);
+                var height = w/rate * (1+w/1440);
+            }
+            
+        }else{
+            if(w<360){
+                var rate = (320/920).toFixed(1);
+            }else if(w >= 360 && w<480){
+                var rate = (375/800).toFixed(1);
+            }else{
+                var rate = (480/800).toFixed(1);
+            }
+            var height = w/rate;
+            
+        }
+        var top = height * r1;
+        var bottom = height * r2 - top;
+        div.css('height', height+'px');
+        div.css('padding-top', top+'px');
+        p.css('padding-bottom', bottom+'px');
+        
+    }
+    $(window).load(function(){
+        reset();
+    });
+    $(window).resize(function(){
+        reset();
+    });
+    var isMobile = navigator.userAgent.indexOf('Mobile');
+    $('[href="#signin"]').click(function(e){
+        e.stopPropagation();
+        if(isMobile > 0){
+            window.location.href="signin.html";
+        }else{
+            var self = $(e.currenttarget);
+            var $form = $('.form-signin');
+            $('.form').hide();
+            $form.fadeIn();
+        }
+        
+    });
+    $('[href="#signup-complete"]').click(function(e){
+        e.stopPropagation();
+        if(isMobile > 0){
+            window.location.href="signupComplete.html";
+        }else{
+            var self = $(e.currenttarget);
+            var $form = $('.form-signup-complete');
+            $('.form').hide();
+            $form.fadeIn();
+        }
+        
+    });
+    $('[href="#form-close"]').click(function(e){
+        e.stopPropagation();
+        $('.form').fadeOut();
+    });
+    $('[href="#signup"]').click(function(e){
+        e.stopPropagation();
+        if(isMobile > 0){
+            window.location.href="signup.html";
+        }else{
+            var self = $(e.currenttarget);
+            var $form = $('.form-signup');
+            $('.form').hide();
+            $form.fadeIn();
+        }
+    });
+    
+    $(window).scroll(function(){
+        var nav = $('.nav');
+        var t = nav[0].offsetTop;
+        var top = document.body.scrollTop;
+        if( top >=t){
+           nav.addClass('navFix');
+        }else{
+            nav.removeClass('navFix');
+        }
+    });
+    $(document).click(function(e){
+        $('.form').fadeOut();
+    });
+    $('.form').click(function(e){
+        e.stopPropagation();
+    });
+    $('.more').click(function(e){
+        var self = $(e.currentTarget);
+        self.next('.nav-wrap').toggle();
+    });
+    $('.user').click(function(e){
+        var self = $(e.currentTarget);
+        self.next('.nav-user').toggle();
+    });
+    $('.secFooter dt').click(function(e){
+        var self = $(e.currentTarget);
+        var $dd = self.next('dd');
+        console.log(self);
+        $dd.toggle();
+
+    });
+});
+</script>
+</body>
+</html>

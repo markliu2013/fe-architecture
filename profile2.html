@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta content="telephone=no" name="format-detection">
+<meta name="HandheldFriendly" content="true">
+<meta charset="utf-8"/>
+<title>DSkies-Profile</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/> 
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+<body id="profile-page">
+
+<div class="nav">
+    <div class="wrap">
+        <a href="#" class="logo" title="DSkies"></a>
+        <a class="more">more</a>
+        <div class="nav-wrap">
+            <a href="#">About us</a>
+            <a href="#office">The office</a>
+            <div class="menu">
+                <span>Locations</span>
+                <p>
+                    <a href="#locations">Xin Tian Di</a>
+                    <span><b>Coming soon</b>Jing An Temple<br>Lu JIa Zui<br>People Square<br>Xu Jia Hui</span></p></div>
+            <a href="#auction">Auction</a>
+        </div>
+        <a class="user"></a>
+        <div class="nav-user">
+            <a href="#signin">Login</a>
+            <a href="#signup">Sign up</a>
+            <div class="form form-signup-complete" style="display:none;">
+                <div class="hd">
+                    <b>Thanks!</b>
+                    <span>Next step,<br>tell us more<br>about yourself!</span>
+                </div>
+                <div class="bd">
+                    <input type="text" placeholder="Given name"/>
+                    <input type="text" placeholder="Family name"/>
+                    <select>
+                        <option value="">Specialization</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Fashion designer">Fashion designer</option>
+                        <option value="Graphic designer">Graphic designer</option>
+                        <option value="Illustrator">Illustrator</option>
+                        <option value="Industrial designer">Industrial designer</option>
+                        <option value="Maker">Maker</option>
+                        <option value="Photographer">Photographer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="file">Portfolio PDF format (max 5 mb)<input type="file"/></div>
+                    <p><a href="#form-close" style="padding-left: 0"><b>Skip</b></a>this step and update later in your profile page</p>
+                </div>
+                <div class="ft">
+                    <a href="#form-close">Complete</a>
+                </div>
+            </div>
+            <div class="form form-signup" style="display:none;">
+                <div class="hd">
+                    <b>Hi!</b>
+                    <span>Welcome,<br>just few clicks<br>and join us!</span>
+                    <a href="#signin">Already a member? <b>Sign in !</b></a>
+                </div>
+                <div class="bd">
+                    <div class="msg">it is error</div>
+                    <input type="phone" placeholder="Phone number"/>
+                    <input type="email" placeholder="e-mail"/>
+                    <input type="password" placeholder="Password"/>
+                    <div class="code"><input type="text"/><span>VERIFY MESSAGE</span></div>
+                    <label><input type="checkbox"/> I agree the terms</label>
+                </div>
+                <div class="ft">
+                    <a href="#signup-complete">Join</a>
+                </div>
+            </div>
+            <div class="form form-signin" style="display:none;">
+                <div class="hd">
+                    <b>Hey there!</b>
+                    <span>Look what<br>is available<br>this week!</span>
+                    <a href="#signup">Not a member? <b>Sign up here!</b></a>
+                </div>
+                <div class="bd">
+                    <input type="text" placeholder="e-mail/phone number"/>
+                    <input type="password" placeholder="Password"/>
+                    <span>Forgot your password?</span>
+                </div>
+                <div class="ft">
+                    <a href="#form-close">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="profile-sec">
+    <div class="image">
+        <img class="avatar" src="img/profile-img.jpg" width="399" height="499" alt="Profile">
+        <label for="upload-profile" class="change-icon"><img src="img/profile-icon.png" width="30" height="30"></label>
+        <input type="file" name="file" id="upload-profile">
+    </div>
+    <div class="info">
+        <h2>Luca Pedrielli</h2>
+        <div class="occupation">Architect</div>
+        <p class="contact">
+            <a href="mailto:luca@pedrielli.org">luca@pedrielli.org</a><br>
+            <a href="http://www.pedrielliandpartners.com">www.pedrielliandpartners.com</a><br>
+            <a href="tel:+86 186-2154-8269">+86 186-2154-8269</a>
+        </p>
+        <div class="bottom-link">
+            <a href="#" id="update-profile">Modify my profile</a><br>
+            <a href="#">Update my portfolio</a><br>
+            <a href="#">Change password</a>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal-dialog">
+        <div class="modal-content" style="">
+            <div class="modal-body">
+                <div class="form form-update-profile">
+                    <a href="#" class="close-icon"></a>
+                    <div class="hd">
+                        <b>What's up! </b>
+                        <span>Something<br>new? Just<br>let us know!</span>
+                    </div>
+                    <div class="bd">
+                        <input type="phone" placeholder="Phone number"/>
+                        <input type="email" placeholder="e-mail"/>
+                        <input type="text" placeholder="Given name"/>
+                        <input type="text" placeholder="Family name"/>
+                        <select>
+                            <option value="">Specialization</option>
+                            <option value="Architect">Architect</option>
+                            <option value="Fashion designer">Fashion designer</option>
+                            <option value="Graphic designer">Graphic designer</option>
+                            <option value="Illustrator">Illustrator</option>
+                            <option value="Industrial designer">Industrial designer</option>
+                            <option value="Maker">Maker</option>
+                            <option value="Photographer">Photographer</option>
+                            <option value="Other">Other</option>
+                        </select>
+                        <input type="text" placeholder="Website"/>
+                    </div>
+                    <div class="ft">
+                        <a href="#update-complete" id="update-complete">Update</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/jquery.js"></script>
+<script>
+    $('#update-profile').bind('click', function(e) {
+        $('.modal').show();
+        e.preventDefault();
+        return false;
+    });
+    $('#update-complete').bind('click', function(e) {
+        $('.modal').hide();
+        return false;
+    });
+    $('.close-icon').bind('click', function() {
+        $(this).parents('.modal').hide();
+        return false;
+    });
+</script>
+
+
+</body>
+</html>

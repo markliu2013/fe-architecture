@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta content="telephone=no" name="format-detection">
+<meta name="HandheldFriendly" content="true">
+<meta charset="utf-8"/>
+<title>DSkies</title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png"/> 
+<!-- build:css -->
+<link rel="stylesheet/less" href="less/main.less">
+<script src="bower_components/less/dist/less.js"></script>
+<!-- endbuild -->
+</head>
+<body>
+<div class="sec secAbout">
+    <p class="title1">Call us<br><a href="tel:400-150-1101">400-150-1101</a><br>for a tour or reservation</p>
+    <p class="title2">
+        The <b>new<br>exclusive<br>creatives club</b>
+    </p>
+    <p class="title3">If you are just looking for a creative atmosphere to do your work in.<br><br>
+    Shanghai is known for its constant and ever-changing creative scene. Xintiandi, a neighbourhood of galleries, start-ups and young creative talent. Enjoy our shared working environment for your independent activity. <br>
+DSkies aim to be  cultural hub where educational, artistic, and entrepreneurial values are cultivated and exchanged.
+    </p>
+    <p class="title4"><a href="http://dskies.cn/1/index-en.html">EN</a><a href="http://dskies.cn/1/index.html">中文</a></p>
+</div>
+<div class="nav">
+    <div class="wrap">
+        <a href="#" class="logo" title="DSkies"></a>
+        <a class="more">more</a>
+        <div class="nav-wrap">
+            <a href="#">About us</a>
+            <a href="#office">The office</a>
+            <div class="menu">
+                <span>Locations</span>
+                <p>
+                    <a href="#locations">Xin Tian Di</a>
+                    <span><b>Coming soon</b>Jing An Temple<br>Lu JIa Zui<br>People Square<br>Xu Jia Hui</span></p></div>
+            <a href="#auction">Auction</a>
+        </div>
+        <a class="user"></a>
+        <div class="nav-user">
+            <!--<a href="#signin">Login</a>-->
+            <!--<a href="#signup">Sign up</a>-->
+            <a href="#logout">LogOut</a>
+            <a href="#" id="profile-info-link"><img src="img/personal-icon.png" width="30" height="30"></a>
+            <div class="form form-signup-complete" style="display:none;">
+                <div class="hd">
+                    <b>Thanks!</b>
+                    <span>Next step,<br>tell us more<br>about yourself!</span>
+                </div>
+                <div class="bd">
+                    <input type="text" placeholder="Given name"/>
+                    <input type="text" placeholder="Family name"/>
+                    <select>
+                        <option value="">Specialization</option>
+                        <option value="Architect">Architect</option>
+                        <option value="Fashion designer">Fashion designer</option>
+                        <option value="Graphic designer">Graphic designer</option>
+                        <option value="Illustrator">Illustrator</option>
+                        <option value="Industrial designer">Industrial designer</option>
+                        <option value="Maker">Maker</option>
+                        <option value="Photographer">Photographer</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="file">Portfolio PDF format (max 5 mb)<input type="file"/></div>
+                    <p><a href="#form-close" style="padding-left: 0"><b>Skip</b></a>this step and update later in your profile page</p>
+                </div>
+                <div class="ft">
+                    <a href="#form-close">Complete</a>
+                </div>
+            </div>
+            <div class="form form-signup" style="display:none;">
+                <div class="hd">
+                    <b>Hi!</b>
+                    <span>Welcome,<br>just few clicks<br>and join us!</span>
+                    <a href="#signin">Already a member? <b>Sign in !</b></a>
+                </div>
+                <div class="bd">
+                    <div class="msg">it is error</div>
+                    <input type="phone" placeholder="Phone number"/>
+                    <input type="email" placeholder="e-mail"/>
+                    <input type="password" placeholder="Password"/>
+                    <div class="code"><input type="text"/><span>VERIFY MESSAGE</span></div>
+                    <label><input type="checkbox"/> I agree the terms</label>
+                </div>
+                <div class="ft">
+                    <a href="#signup-complete">Join</a>
+                </div>
+            </div>
+            <div class="form form-signin" style="display:none;">
+                <div class="hd">
+                    <b>Hey there!</b>
+                    <span>Look what<br>is available<br>this week!</span>
+                    <a href="#signup">Not a member? <b>Sign up here!</b></a>
+                </div>
+                <div class="bd">
+                    <input type="text" placeholder="e-mail/phone number"/>
+                    <input type="password" placeholder="Password"/>
+                    <span>Forgot your password?</span>
+                </div>
+                <div class="ft">
+                    <a href="#form-close">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="sec secAuction" id="auction">
+    <p class="title1">Begin your <b>new experience</b> in</p>
+    <div id="fancyCountdown" class="cutdown" style="margin-bottom: 30px"></div>
+
+    <div class="profile-sec" id="profile-sec">
+        <div class="image">
+            <img class="avatar" src="img/profile-img.jpg" width="399" height="499" alt="Profile">
+            <label for="upload-profile" class="change-icon"><img src="img/profile-icon.png" width="30" height="30"></label>
+            <input type="file" name="file" id="upload-profile">
+        </div>
+        <div class="info">
+            <h2>Luca Pedrielli</h2>
+            <div class="occupation">Architect</div>
+            <p class="contact">
+                <a href="mailto:luca@pedrielli.org">luca@pedrielli.org</a><br>
+                <a href="http://www.pedrielliandpartners.com">www.pedrielliandpartners.com</a><br>
+                <a href="tel:+86 186-2154-8269">+86 186-2154-8269</a>
+            </p>
+            <div class="bottom-link">
+                <a href="#" id="update-profile">Modify my profile</a><br>
+                <a href="#">Update my portfolio</a><br>
+                <a href="#">Change password</a>
+            </div>
+        </div>
+    </div>
+
+    <p class="title2">Welcome!<br><b>make a bid!</b></p>
+</div>
+<div class="sec secJoin" id="join">
+    <a class="bid join" href="#bid">Bid</a>
+    <p class="title1">Get your own<br>workspace <b>for free!</b></p>
+    <p class="title2">Not won the auction? Don’t worry, you can still <b>win a workspace for free!</b> Find out how!</p>
+</div>
+<div class="sec secOffice">
+    <div class="wrap">
+        <p class="mod-p"><i class="icon icon-invitation"></i><span>DSkies <b>invitation</b></span>DSkies take care about the qualities and skills of designers to whom offers great services.<br>
+In order to stimulate the good design in Shanghai and China, DSkies give a free desk to <b>one</b> designer that consider worthy and talended. To be invited, please be sure to send us your personal portfolio!</p>
+        <p class="mod-p"><i class="icon icon-luck"></i><span><b>Luck</b> draw</span>DSkies also give a chance to lucky guys through a lottery. Just <b>one</b> designer will be randomly chosen by our reliable and tried system.<br>
+Just bid and find out how much lucky you are!</p>
+        <p class="mod-p"><i class="icon icon-boost"></i><span><b>WeChat</b> boost</span>DSkies reserve an exclusive desk to <b>one</b> supports more our campaign of outstanding designers hunting.<br>
+To do this, just spread to your creative friends the DSkies advertising page through WeChat.</p>
+    </div>
+    <div class="slider">
+        <div class="office-anchor"><div id="office">&nbsp;</div></div>
+        <div class="mod-slider" id="offices">
+            <ul class="slider-list">
+                <li><a><img src="img/DSkies01.jpg"/></a><i><em></em><span><img src="img/DSkies01.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies02.jpg"/></a><i><em></em><span><img src="img/DSkies02.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies03.jpg"/></a><i><em></em><span><img src="img/DSkies03.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies04.jpg"/></a><i><em></em><span><img src="img/DSkies04.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies05.jpg"/></a><i><em></em><span><img src="img/DSkies05.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies06.jpg"/></a><i><em></em><span><img src="img/DSkies06.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies07.jpg"/></a><i><em></em><span><img src="img/DSkies07.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies08.jpg"/></a><i><em></em><span><img src="img/DSkies08.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies01.jpg"/></a><i><em></em><span><img src="img/DSkies01.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies02.jpg"/></a><i><em></em><span><img src="img/DSkies02.jpg"/></span></i></li>
+                <li><a><img src="img/DSkies03.jpg"/></a><i><em></em><span><img src="img/DSkies03.jpg"/></span></i></li>
+            </ul>
+            <div class="slider-page">
+                <a href="#" style="display:none;">1</a>
+                <a href="#" style="display:none;">2</a>
+                <a href="#" class="active">3</a>
+                <a href="#">4</a>
+                <a href="#">5</a>
+                <a href="#">6</a>
+                <a href="#">7</a>
+                <a href="#">8</a>
+                <a href="#">1</a>
+                <a href="#">2</a>
+                <a href="#" style="display:none;">3</a>
+            </div>
+        </div>
+        <i class="slider-bg-left"></i>
+        <i class="slider-bg-right"></i>
+    </div>
+    <div class="wrap share">
+        <p class="title1">Share your values,<br><b>boost your business.</b></p>
+        <p class="title2">It is a great place to set-up a desk space and work with your team, or to make important connections. Get involved with DSkies creative collective if you are looking to enhance you career in design.<br><br>
+We provide independent creatives a place to get work done, meet clients and professionally “show up”, both mentally and physically. Work independently while being part of a community of talented individuals sharing values and synergy.</p>
+    </div>
+</div>
+<div class="sec secArea" id="area">
+    <div class="wrap">
+        <p class="mod-p"><i class="icon icon-1"></i><span><b>Flexible, dynamic</b> and <b>comfortable</b></span>
+            As coworking spaces, DSkies offer amenities and services that let the creative live and feel a comfortable space like his own home. Food, coffee and beverages, fast wi-fi, administration services, printing, amusement , as well as all restaurants and all services offered by several businesses located in the basement of SOHO Fuxing plaza.
+        </p>
+        <p class="mod-p"><i class="icon icon-2"></i><span>A workspace where <b>exhibit your talent</b></span>We think that one of the first service a designer needs is the chance to share, highlight and exhibit his own talent and work with the others. That’s why our workspaces are conceived in order to show designers' works, products and researches.</p>
+        <p class="mod-p"><i class="icon icon-3"></i><span><b>The best location</b> for best designers</span>With the first office located at the 11th floor of the tower A of SOHO Fuxing plaza in the middle of Xintiandi, DSkies want to let talended designers work in areas opened to international sharing of ideas and initiatives about the world of design, fashion and technology. Our vision forecasts to entablish a DSky in all the most important and social active areas of Shanghai.</p>
+        <p class="mod-p"><i class="icon icon-4"></i><span>An <b>outstanding enviroment</b> for your creativity</span>With the first office located at the 11th floor of the tower A of SOHO Fuxing plaza in the middle of Xintiandi, DSkies want to let talended designers work in areas opened to international sharing of ideas and initiatives about the world of design, fashion and technology. Our vision forecasts to establish a DSky in all the most important and social active areas of Shanghai.</p>
+    </div>
+</div>
+<div class="sec secLocations">
+    <div class="locations-anchor"><div id="locations">&nbsp;</div></div>
+    <div class="wrap">
+        <p class="title1"><b>Keep tuned!</b><br>Discover next new DSkies.</p>
+        <p class="title2">We’re going to establish several DSkies in Shanghai, the most important economic, financial and multicultural city of China.
+        <br><br>
+        The first special DSky is based in the middle of Xintiandi, a key landmark, the best location for creatives and designers from all over the world. </p>
+    </div>
+</div>
+<div class="sec secFooter" id="footers">
+    <div class="wrap">
+        <div class="hd">
+            <p class="title1">Not a member yet?<br>Get <b>now</b> your<br><b>special membership!</b></p>
+            <p class="title2">
+                <a class="join" href="#signin"></a>
+                <span>or call us<br><a href="tel:400-150-1101">400-150-1101</a></span>
+            </p>
+        </div>
+        <div class="bd">
+            <p class="title1">
+                <span class="logo"></span>
+                <small>over the top</small>
+                11F SOHO Fuxing Plaza. <br>
+                388 Madang Road. <br>
+                Huangpu. <br>
+                Shanghai. 200025.<br>
+            </p>
+            <div class="right">
+                <dl>
+                    <dt><a href="#auction">Auction</a></dt>
+                </dl>
+                <dl class="menu">
+                    <dt><span>Locations</span></dt>
+                    <dd>
+                    <a href="#locations">Xin Tian Di</a>
+                    <span><b>Coming soon</b>Jing An Temple<br>Lu JIa Zui<br>People Square<br>Xu Jia Hui</span></dd>
+                </dl>
+                <dl>
+                    <dt>Events</dt>
+                </dl>
+                <dl>
+                    <dt><a href="#office">The office</a></dt>
+                    <dd><a>Reservation</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">About us</a></dt>
+                    <dd><a href="#footer">Career<br>Contact us</a></dd>
+                </dl>
+            </div>
+        </div>
+        <div class="ft">
+            <p class="title1"><a href="http://dskies.cn/1/index-en.html">EN</a><a href="http://dskies.cn/1/index.html">中文</a></p>
+            <p class="title2">
+                <span class="left">Terms of Use | Privacy Policy | Legal Statement | Site map</span>
+
+                <span class="right">2015-2016 DSkies EUCP All rights reserved<i>沪ICP备15049473号-2</i></span>
+            </p>
+        </div>
+    </div>
+</div>
+<!-- build:js -->
+<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancyCountdown.min.js"></script>
+<script type="text/javascript" src="js/swipe.js"></script>
+<!-- endbuild -->
+<script type="text/javascript">
+$(function(){
+    $('#fancyCountdown').fancyCountdown({
+        year:2015,
+        month:11,
+        day:21,
+        hour:12,
+        minute:12,
+        second:12,
+        timezone:1,
+        digitUnitHeight:36,
+        autoStart:true,
+        callback:targetReached,
+        digits:{days:true,hours:true,minutes:true,seconds:true},
+        bottomDigitOffset: 28,
+        overlayImageUrl: '',
+        captionTitles: {
+            days: "days",
+            hours: "hours",
+            minutes: "min",
+            seconds: "sec"
+        },
+
+    });
+    indexSwipe("offices");
+    function targetReached() {
+      $('#target-date-reached').slideDown(500);
+      return false;
+    };
+    function indexSwipe(idNmane){
+        var mySwipe = new Swipe(document.getElementById(idNmane), {
+            speed:500,
+            auto:3000,
+            startSlide:2,
+            callback: function(){
+                var lis = $(this.element).next("div.slider-page").children();
+                lis.removeClass("active").eq(this.index).addClass("active");
+            }
+        });
+        $('.mod-slider .slider-page a').on('click', function(event) {
+            var index = $(this).index();
+            mySwipe.slide(index);
+            event.preventDefault();
+            return false;
+        });
+    }
+    function reset(){
+        var w = document.body.scrollWidth;
+        var div = $('.secAbout');
+        var p = div.find('.title1');
+        var r1 = 0.52;
+        var r2 = 0.62;
+        if(w>=800){
+            if( w < 1200){
+                var rate = (970/800).toFixed(1);
+                var height = w/rate;
+            }else{
+                var rate = (1440/400).toFixed(1);
+                var height = w/rate * (1+w/1440);
+            }
+            
+        }else{
+            if(w<360){
+                var rate = (320/920).toFixed(1);
+            }else if(w >= 360 && w<480){
+                var rate = (375/800).toFixed(1);
+            }else{
+                var rate = (480/800).toFixed(1);
+            }
+            var height = w/rate;
+            
+        }
+        var top = height * r1;
+        var bottom = height * r2 - top;
+        div.css('height', height+'px');
+        div.css('padding-top', top+'px');
+        p.css('padding-bottom', bottom+'px');
+        
+    }
+    $(window).load(function(){
+        reset();
+    });
+    $(window).resize(function(){
+        reset();
+    });
+    var isMobile = navigator.userAgent.indexOf('Mobile');
+    $('[href="#signin"]').click(function(e){
+        e.stopPropagation();
+        if(isMobile > 0){
+            window.location.href="signin.html";
+        }else{
+            var self = $(e.currenttarget);
+            var $form = $('.form-signin');
+            $('.form').hide();
+            $form.fadeIn();
+        }
+        
+    });
+    $('[href="#signup-complete"]').click(function(e){
+        e.stopPropagation();
+        if(isMobile > 0){
+            window.location.href="signupComplete.html";
+        }else{
+            var self = $(e.currenttarget);
+            var $form = $('.form-signup-complete');
+            $('.form').hide();
+            $form.fadeIn();
+        }
+        
+    });
+    $('[href="#form-close"]').click(function(e){
+        e.stopPropagation();
+        $('.form').fadeOut();
+    });
+    $('[href="#signup"]').click(function(e){
+        e.stopPropagation();
+        if(isMobile > 0){
+            window.location.href="signup.html";
+        }else{
+            var self = $(e.currenttarget);
+            var $form = $('.form-signup');
+            $('.form').hide();
+            $form.fadeIn();
+        }
+    });
+
+
+    var nav = $('.nav');
+    var topNav = nav[0].offsetTop;
+    $(window).scroll(function(){
+        var top = document.body.scrollTop;
+        if( top >=topNav){
+           nav.addClass('navFix');
+        }else{
+            nav.removeClass('navFix');
+        }
+    });
+
+    $(document).click(function(e){
+        $('.form').fadeOut();
+    });
+    $('.form').click(function(e){
+        e.stopPropagation();
+    });
+    $('.more').click(function(e){
+        var self = $(e.currentTarget);
+        self.next('.nav-wrap').toggle();
+    });
+    $('.user').click(function(e){
+        var self = $(e.currentTarget);
+        self.next('.nav-user').toggle();
+    });
+    $('.secFooter dt').click(function(e){
+        var self = $(e.currentTarget);
+        var $dd = self.next('dd');
+        console.log(self);
+        $dd.toggle();
+
+    });
+    $('#profile-info-link').click(function(e) {
+        $('#profile-sec').slideToggle();
+        e.preventDefault();
+        return false;
+    });
+});
+</script>
+</body>
+</html>

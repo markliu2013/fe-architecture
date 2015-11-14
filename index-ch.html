@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta content="telephone=no" name="format-detection">
+<meta charset="utf-8"/>
+<title>1</title>
+<link rel="stylesheet" type="text/css" href="css/index.css" />
+</head>
+<body class="ch">
+    <div class="wrap">
+        <p class="title1">敬请期待</p>
+        <p class="title2">即将开始你的<b>全新体验</b></p>
+        <div id="fancyCountdown" class="cutdown"></div>
+        <p class="title3">预约参观或订位<br><a href="tel:400-150-1101">400-150-1101</a></p>
+        <p class="title4"><a href="index-en.html">EN</a><a href="#index-ch.html">中文</a></p>
+    </div>
+    <div class="bg"><i></i></div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/jquery.fancyCountdown.min.js"></script>
+   
+    <script type="text/javascript">
+    $(function(){
+        $('#fancyCountdown').fancyCountdown({
+            year:2015,
+            month:11,
+            day:5,
+            hour:0,
+            minute:0,
+            second:0,
+            timezone:1,
+            digitUnitHeight:36,
+            autoStart:true,
+            callback:targetReached,
+            digits:{days:true,hours:true,minutes:true,seconds:true},
+            bottomDigitOffset: 28,
+            overlayImageUrl: '',
+            captionTitles: {
+                days: "天",
+                hours: "时",
+                minutes: "分",
+                seconds: "秒"
+            },
+
+        });
+
+        function targetReached() {
+          $('#target-date-reached').slideDown(500);
+          return false;
+        };
+        function reset(){
+            var w = document.body.scrollWidth;
+            var h = document.body.scrollHeight;
+            var rate = (3000/1686).toFixed(1);
+            var r1 = 0.53;
+            var r2 = 0.61;
+            var div = $('.wrap');
+            var p = div.find('.title1');
+            var top = h*r1;
+            var bottom = h*r2-top;
+            var pageRate = (w/h).toFixed(1);
+            if( pageRate < rate){
+               top = h/rate - 10;
+               bottom = h*r2-top;
+            }else if( pageRate > rate){
+                top = (w/rate)*r1-(w/rate-h);
+                bottom = (w/rate)*r2-(w/rate-h)-top;
+            }
+            div.css('padding-top',top+'px');
+            p.css('padding-bottom', bottom+'px');
+        }
+        $(window).load(function(){
+            reset();
+        });
+        $(window).resize(function(){
+            reset();
+        });
+    });
+    </script>
+</body>
+</html>

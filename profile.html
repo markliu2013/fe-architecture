@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7, IE=9">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta content="black" name="apple-mobile-web-app-status-bar-style">
+<meta name="format-detection" content="telephone=no">
+<meta content="telephone=no" name="format-detection">
+<meta charset="utf-8"/>
+<title>repassword</title>
+<link rel="stylesheet" type="text/css" href="css/sign.css" />
+<!-- <link rel="stylesheet" type="text/css" href="http://csstest.cy.com/dist/dskiss/css/profile.css" /> -->
+</head>
+<body>
+<div class="wrap profile">
+    <div class="hd">
+        <div class="file">
+            <span style="background-image:url('img/avatar.jpg')"></span>
+             <input type="file"/>
+             <i></i>
+        </div>
+    </div>
+    <div class="bd">
+        <p><b>Luca Pedrielli</b>
+        <span>Architect</span></p>
+        <p>luca@pedrielli.org<br>
+            <a href="www.pedrielliandpartners.com" target="_blank">www.pedrielliandpartners.com</a><br>
+            <a href="tel:+086 186-2154-8269">+086 186-2154-8269</a></p>
+    </div>
+    <div class="ft">
+        <a href="signupComplete.html">Modify my profile</a>
+        <a href="#editPortfolio">Update my portfolio</a>
+    </div>
+</div>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script>
+$('[href="#editPortfolio"]').click(function(){
+    var $file = $('[type="file"]');
+    $file.show();
+    $file.next().show();
+});
+</script>
+</body>
+</html>
